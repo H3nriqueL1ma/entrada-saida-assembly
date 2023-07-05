@@ -1,4 +1,4 @@
-NAME = program
+NAME = entry-and-exit
 
 all: $(NAME).o
 	ld -s -o $(NAME) $(NAME).o
