@@ -12,19 +12,19 @@ section .text
 global _start
 
 _start:
-    mov         EAX, SYS_WRITE
-    mov         EBX, STD_OUT
-    mov         ECX, msg
-    mov         EDX, size
-    int         SYS_CALL
+    MOV         EAX, SYS_WRITE
+    MOV         EBX, STD_OUT
+    MOV         ECX, msg
+    MOV         EDX, size
+    INT         SYS_CALL
 
-    mov         EAX, SYS_READ
-    mov         EBX, STD_IN
-    mov         ECX, name
-    mov         EDX, 10
-    int         SYS_CALL
+    MOV         EAX, SYS_READ
+    MOV         EBX, STD_IN
+    MOV         ECX, name
+    MOV         EDX, 10
+    INT         SYS_CALL
 
 _exit:
-    mov         EAX, SYS_EXIT
-    mov         EBX, RET_EXIT
-    int         SYS_CALL
+    MOV         EAX, SYS_EXIT
+    MOV         EBX, RET_EXIT
+    INT         SYS_CALL
